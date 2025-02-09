@@ -1,2 +1,4 @@
 # Ignore temp SASS files
 .sass-cache/
+node_modules/
+dist/
