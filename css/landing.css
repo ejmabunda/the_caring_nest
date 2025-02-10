@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+img {
+  max-width: 100%; }
+
 /* Global Styles */
 body {
   font-family: "Poppins", sans-serif;
@@ -13,4 +16,4 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cormorant SC"; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=landing.css.map */
