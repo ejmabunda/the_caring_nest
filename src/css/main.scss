@@ -1,0 +1,25 @@
+/* Design Scheme */
+$charcoal-blue: #172126;
+$gunmetal: #171E26;
+$beige: #D9D1B8;
+$olive: #7A8C3A;
+
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: $beige;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cormorant SC";
+}
