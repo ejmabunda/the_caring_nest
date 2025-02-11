@@ -1,1 +1,69 @@
-@import 'base';
+@use 'base';
+@use 'header';
+@use 'footer';
+
+
+// Note: mobile-first design
+img {
+    border-radius: base.$br;
+}
+#hero,
+#about,
+#services,
+#project {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+
+// Hero Section
+#hero {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+// About section
+#about {
+    background: white;
+}
+
+#services {
+    img {
+        border-radius: base.$br;
+    }
+
+    #highlighted-services {
+        background-color: base.$charcoal-blue;
+        color: white;
+        border-radius: base.$br;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .service {
+            padding: 1rem;
+            border: 0 solid white;
+        }
+        .service:nth-child(1) {
+            border-width: 0 1px 1px 0;
+        }
+        .service:nth-child(2) {
+            border-width: 0 0 1px 1px;
+        }
+        .service:nth-child(3) {
+            border-width: 1px 1px 0 0;
+        }
+        .service:nth-child(4) {
+            border-width: 1px 0 0 1px;
+        }
+    }
+}
+
+// Project highlight
+#project {
+    background-color: base.$charcoal-blue;
+    color: white;
+}

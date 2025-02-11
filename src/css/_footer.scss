@@ -1,0 +1,19 @@
+@use 'base';
+
+footer {
+    background-color: base.$charcoal-blue;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+    .navigation {
+        padding-top: 1rem;
+
+        ul {
+            list-style: none;
+        }
+    }
+    .contact {
+        padding: 1rem 0;
+    }
+}

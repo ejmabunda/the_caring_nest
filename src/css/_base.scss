@@ -1,17 +1,24 @@
 /* Design Scheme */
+// Colors
 $charcoal-blue: #172126;
 $gunmetal: #171E26;
 $beige: #D9D1B8;
 $olive: #7A8C3A;
+
+// Sizes
+$br: 10px; // Border Radius
+$padding: .5rem;
 
 /* Normalize */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 img {
     max-width: 100%;
+    max-height: min-content;
 }
 
 /* Global Styles */
@@ -22,4 +29,22 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Cormorant SC";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.accent-text {
+    font-family: "Cormorant Upright";
+}
+
+/* Common elements */
+.btn {
+    background-color: $olive;
+    color: white;
+    padding: $padding calc($padding * 2);
+    display: inline-block;
+    border-radius: $br;
 }

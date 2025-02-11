@@ -1,0 +1,80 @@
+@use 'base';
+
+// Header Section
+header {
+    display: flex;
+    flex-direction: column;
+
+    #announcements {
+        background-color: base.$charcoal-blue;
+        text-align: center;
+        padding: 1rem;
+        font-size: 12px;
+        
+        #contact {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+    }
+
+    // Navigation Section
+    nav {
+        background-color: base.$gunmetal;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        
+        .top {
+            background-color: base.$gunmetal;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            padding: 1rem;
+            width: 100%;
+            top: 0;
+
+            #menu-toggle {
+                width: 30px;
+                height: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                .bar {
+                    width: inherit;
+                    height: calc(100% / 6);
+                    background-color: white;
+                }
+            }
+    
+            #logo {
+                font-family: "Cormorant Upright", cursive;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+
+        #links {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 200ms ease-in-out;
+
+            li {
+                padding: 1rem;
+                border-top: .1px solid base.$beige;
+            }
+        }
+
+        #links.open {
+            overflow: hidden;
+            max-height: 100vh;
+            list-style: none;
+
+            li {
+                padding: 1rem;
+            }
+        }
+    }
+}
