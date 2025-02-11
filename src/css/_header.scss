@@ -11,11 +11,23 @@ header {
         padding: 1rem;
         font-size: 12px;
         border-bottom: 1px solid base.$beige;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         
         #contact {
             display: flex;
             justify-content: space-between;
             color: white;
+        }
+        .social-icons {
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+
+            i {
+                font-size: 1rem;
+            }
         }
     }
 
