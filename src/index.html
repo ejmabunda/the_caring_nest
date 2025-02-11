@@ -15,83 +15,24 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    
+
     <script src="https://kit.fontawesome.com/f4a117fbe4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Header Section -->
-    <header>
-        <div id="announcements">
-            <section id="contact">
-                <span>
-                    <a href="mailto:info@thecaringnest.com">
-                        <i class="fa-solid fa-envelope"></i>
-                        info@thecaringnest.com
-                    </a>
-                </span>
-                <span>
-                    <a href="tel:0123456789">
-                        <i class="fa-solid fa-phone"></i>
-                        (+27) 65 717 5663
-                    </a>
-                </span>
-            </section>
-
-            <!-- Social Media Icons -->
-            <section class="social-icons">
-                <a href="https://www.facebook.com" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </section>
+    <header-component></header-component>
+    <section id="hero">
+        <h1>A well-balanced community</h1>
+        <p>Serving the marginalized, underprivileged, and displaced where goals are achieved & everyone has an
+            opportunity to reach their potential.</p>
+        <div>
+            <a class="btn" href="pages/donate.html">Donate</a>
+            <a class="btn" href="#about">Learn More</a>
         </div>
-
-        <!-- Navigation Section -->
-        <nav>
-            <div class="top">
-                <a id="logo" href="/">
-                    <img src="img/logo.png" alt="The Caring Nest logo" width="50px" height="50px">
-                    The Caring Nest
-                </a>
-
-                <!-- Menu toggle for mobile devices -->
-                <div id="menu-toggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-            </div>
-
-            <!-- Navigation links -->
-            <ul id="links">
-                <li><a href="pages/gallery.html">Gallery</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/donate.html">Donate</a></li>
-            </ul>
-        </nav>
-
-        <!-- Hero Section -->
-        <section id="hero">
-            <h1>A well-balanced community</h1>
-            <p>Serving the marginalized, underprivileged, and displaced where goals are achieved & everyone has an
-                opportunity to reach their potential.</p>
-            <div>
-                <a class="btn" href="pages/donate.html">Donate</a>
-                <a class="btn" href="#about">Learn More</a>
-            </div>
-            <img src="img/805df88f-e9d3-4c5c-8f30-97fe1d1125d0.jpg" alt="a person standing in front of a crowd"
-                width="715px" height="477px">
-        </section>
-    </header>
+        <img src="img/805df88f-e9d3-4c5c-8f30-97fe1d1125d0.jpg" alt="a person standing in front of a crowd"
+            width="715px" height="477px">
+    </section>
 
     <!-- Main Section -->
     <main>
@@ -178,40 +119,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <h2>The Caring Nest Ministries</h2>
-        <p class="accent-text">nurturing hope, transforming lives</p>
-        <section class="navigation">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/gallery.html">Gallery</a></li>
-                <li><a href="pages/donate.html">Donate</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-        </section>
-        <section class="contact">
-            <p>Naluwoli village <br>Butansi sub county<br> Kamuli District<br>Uganda<br>Butegere P.O BOX 05 KAMULI</p>
-        </section>
-        <img src="img/0ab09181-632e-4394-b87d-03f5af4f281c.jpg" alt="A group of people" width="715px" height="536px">
-        <section class="footer">
-            <p>2025 The Caring Nest | All Rights Reserved</p>
-            <section class="social-icons">
-                <a href="https://www.facebook.com" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </section>
-        </section>
-    </footer>
+    <footer-component></footer-component>
 </body>
 
 </html>

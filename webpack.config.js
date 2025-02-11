@@ -15,6 +15,10 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html',
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/gallery.html',
+            filename: 'gallery.html',
+        }),
         new CopyWebpackPlugin({
             patterns: [{ from: 'src/img', to: 'img' }], // Copy all images to dist/img/
         }),
