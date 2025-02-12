@@ -1,6 +1,6 @@
 @use 'base';
 
-// Header Section
+// Header Section - Mobile design
 header {
     display: flex;
     flex-direction: column;
@@ -44,7 +44,6 @@ header {
             align-items: center;
             display: flex;
             padding: 1rem;
-            width: 100%;
             top: 0;
 
             #menu-toggle {
@@ -87,6 +86,72 @@ header {
 
             li {
                 padding: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+// Header section - Large screens
+    header {
+        #announcements {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1rem;
+            
+            #contact {
+                gap: 1rem;
+            }
+            .social-icons {
+                color: white;
+                display: flex;
+                justify-content: space-evenly;
+                gap: 1rem;
+
+                i {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        // Navigation Section
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+            .top {
+                background-color: base.$gunmetal;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+                padding: 1rem;
+
+                #menu-toggle {
+                    display: none;
+                }
+        
+                #logo {
+                    font-family: "Cormorant Upright", cursive;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+            }
+
+            #links {
+                width: fit-content;
+                list-style: none;
+                display: flex;
+                max-height: 100vh;
+                gap: 1rem;
+                justify-self: end;
+
+                li {
+                    border: none;
+                }
             }
         }
     }
