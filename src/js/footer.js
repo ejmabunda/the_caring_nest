@@ -6,9 +6,13 @@ class FooterComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <footer>
-        <h2>The Caring Nest Ministries</h2>
+        <div class="logo">
+            <h2>The Caring Nest Ministries</h2>
         <p class="accent-text">nurturing hope, transforming lives</p>
+        </div>
+        <div>
         <section class="navigation">
+            <h2>Find your way</h2>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="pages/about.html">About</a></li>
@@ -17,10 +21,14 @@ class FooterComponent extends HTMLElement {
                 <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </section>
+
         <section class="contact">
+            <h2>Contact Us</h2>
             <p>Naluwoli village <br>Butansi sub county<br> Kamuli District<br>Uganda<br>Butegere P.O BOX 05 KAMULI</p>
         </section>
         <img src="img/0ab09181-632e-4394-b87d-03f5af4f281c.jpg" alt="A group of people" width="715px" height="536px">
+        </div>
+
         <section class="footer">
             <p>2025 The Caring Nest | All Rights Reserved</p>
             <section class="social-icons">

@@ -17,3 +17,53 @@ footer {
         padding: 1rem 0;
     }
 }
+
+@media (min-width: 800px) {
+    footer {
+        padding: 1rem 0;
+        text-align: left;
+
+        div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            img {
+                width: 50%;
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+            }
+        }
+
+        .navigation h2,
+        .contact h2 {
+            padding-bottom: 1rem;
+        }
+    
+        .navigation {
+            padding-top: 1rem;
+    
+            ul {
+                list-style: none;
+
+                li {
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+        .contact {
+            padding: 1rem 0;
+
+            p {
+                line-height: 2;
+            }
+        }
+
+        .footer {
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
