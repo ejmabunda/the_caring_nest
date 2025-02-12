@@ -99,6 +99,7 @@ header {
             flex-direction: row;
             justify-content: space-between;
             gap: 1rem;
+            padding: 1rem 0;
             
             #contact {
                 gap: 1rem;
@@ -127,7 +128,7 @@ header {
                 justify-content: space-between;
                 align-items: center;
                 display: flex;
-                padding: 1rem;
+                padding: 1rem 0;
 
                 #menu-toggle {
                     display: none;
@@ -151,6 +152,7 @@ header {
 
                 li {
                     border: none;
+                    padding: 1rem 0;
                 }
             }
         }
