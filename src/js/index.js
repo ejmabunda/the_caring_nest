@@ -6,6 +6,7 @@ const gallery = require('../css/gallery.scss');
 const header = require('../js/header');
 const footer = require('../js/footer');
 
+/* Mobile menu */
 menu_toggle = document.querySelector('#menu-toggle');
 menu_toggle.addEventListener('click', () => {
     document.querySelector('#links').classList.toggle('open');
