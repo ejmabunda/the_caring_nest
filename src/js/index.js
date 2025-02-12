@@ -1,6 +1,7 @@
 /* Stylesheets */
 const main = require('../css/landing.scss');
 const gallery = require('../css/gallery.scss');
+const about = require('../css/about.scss');
 
 /* Web components */
 const header = require('../js/header');

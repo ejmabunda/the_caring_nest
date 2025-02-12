@@ -1,0 +1,39 @@
+@use 'base';
+@use 'header';
+@use 'footer';
+
+#mission,
+#story,
+#what-we-do,
+#help {
+    padding: 2rem 1rem;
+    text-align: center;
+    
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    #cta {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+#mission {
+    background-color: white;
+}
+
+#story {
+    background-color: base.$charcoal-blue;
+    color: white;
+}
+
+#what-we-do {
+    background-color: white;
+    
+    p {
+        text-align: left;
+    }
+}

@@ -53,9 +53,9 @@ class HeaderComponent extends HTMLElement {
 
                     <ul id="links">
                         <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
-                        <li><a href="pages/about.html">About</a></li>
-                        <li><a href="pages/donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="donate.html">Donate</a></li>
                     </ul>
                 </nav>
             </header>
