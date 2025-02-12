@@ -4,12 +4,12 @@
 
 
 // Note: mobile-first design
-body {
-    
-}
+body {}
+
 img {
     border-radius: base.$br;
 }
+
 #hero,
 #about,
 #services,
@@ -50,15 +50,19 @@ img {
             padding: 1rem;
             border: 0 solid white;
         }
+
         .service:nth-child(1) {
             border-width: 0 1px 1px 0;
         }
+
         .service:nth-child(2) {
             border-width: 0 0 1px 1px;
         }
+
         .service:nth-child(3) {
             border-width: 1px 1px 0 0;
         }
+
         .service:nth-child(4) {
             border-width: 1px 0 0 1px;
         }
@@ -69,4 +73,23 @@ img {
 #project {
     background-color: base.$charcoal-blue;
     color: white;
+}
+
+
+@media (min-width: 800px) {
+    #hero {
+        flex-direction: row;
+
+        .img-container {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 50vw;
+            height: 50vw;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }
