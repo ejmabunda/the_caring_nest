@@ -3,6 +3,7 @@ const main = require('../css/landing.scss');
 const gallery = require('../css/gallery.scss');
 const about = require('../css/about.scss');
 const contact = require('../css/contact.scss');
+const donate = require('../css/donate.scss');
 
 /* Web components */
 const header = require('../js/header');

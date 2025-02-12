@@ -27,6 +27,10 @@ module.exports = {
             template: './src/pages/contact.html',
             filename: 'contact.html',
         }),
+        new HtmlWebpackPlugin({
+            template: './src/pages/donate.html',
+            filename: 'donate.html',
+        }),
         new CopyWebpackPlugin({
             patterns: [{ from: 'src/img', to: 'img' }], // Copy all images to dist/img/
         }),
